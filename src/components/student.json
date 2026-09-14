@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Juan Dela Cruz",
+    "studentNumber": "20240001",
+    "course": "BS Information Technology",
+    "year": "2nd Year",
+    "email": "juan@gmail.com",
+    "age": 20
+  },
+  {
+    "id": 2,
+    "name": "Maria Santos",
+    "studentNumber": "20240002",
+    "course": "BS Computer Science",
+    "year": "3rd Year",
+    "email": "maria@gmail.com",
+    "age": 21
+  },
+  {
+    "id": 3,
+    "name": "Pedro Reyes",
+    "studentNumber": "20240003",
+    "course": "BS Information Technology",
+    "year": "1st Year",
+    "email": "pedro@gmail.com",
+    "age": 19
+  }
+]

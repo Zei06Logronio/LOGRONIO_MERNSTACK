@@ -1,16 +1,23 @@
-import Studentcard from "./components/studentcard";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Studentcard from "./components/studentcard.jsx";
+import Student from "./components/student.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Studentcard
-        name="Zea Logronio"
-        age={20}
-        studentId="202403854"
-        course="Information Technology"
-        section="3-3"
-      />
-    </div>
+    <BrowserRouter>
+      <nav className="flex flex-row gap-2 p-2">
+        <Link to="/studentcardh">Home</Link>
+        <Link to="/studentcard">Student Card</Link>
+        <Link to="/student">Student</Link>
+      </nav>
+      <Routes>
+        <Route path="/studentcard" element={<Studentcard />}>
+        </Route>
+        <Route path="/student" element={<Student />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
