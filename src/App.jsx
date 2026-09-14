@@ -1,23 +1,26 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Studentcard from "./components/studentcard.jsx";
-import Student from "./components/student.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Students from "./pages/Students";
+import StudentDetails from "./pages/StudentDetails";
 
 function App() {
   return (
     <BrowserRouter>
-      <nav className="flex flex-row gap-2 p-2">
-        <Link to="/studentcardh">Home</Link>
-        <Link to="/studentcard">Student Card</Link>
-        <Link to="/student">Student</Link>
-      </nav>
+      <Navbar />
+
       <Routes>
-        <Route path="/studentcard" element={<Studentcard />}>
-        </Route>
-        <Route path="/student" element={<Student />}>
-        </Route>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/students" element={<Students />} />
+
+        <Route
+          path="/students/:id"
+          element={<StudentDetails />}
+        />
       </Routes>
     </BrowserRouter>
-
   );
 }
 
