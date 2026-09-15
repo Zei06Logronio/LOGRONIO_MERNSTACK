@@ -1,4 +1,4 @@
-import Student from "./components/Student";
+import Student from "../pages/components/Student";
 
 function Students() {
   return (
