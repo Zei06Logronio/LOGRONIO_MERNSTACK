@@ -1,5 +1,5 @@
 import Student from "../data/student.json";
-import Student from "../components/student";
+import Student from "../components/studentcard";
 
 function Students() {
   return (
