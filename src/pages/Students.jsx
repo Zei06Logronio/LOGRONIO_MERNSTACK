@@ -1,4 +1,3 @@
-import students from "./data/students.json";
 import Student from "./components/Student";
 
 function Students() {
@@ -6,14 +5,7 @@ function Students() {
     <div className="page">
       <h1>Students</h1>
 
-      <div className="students-container">
-        {students.map((student) => (
-          <Student
-            key={student.id}
-            student={student}
-          />
-        ))}
-      </div>
+      <Student />
     </div>
   );
 }
