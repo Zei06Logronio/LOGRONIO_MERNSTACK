@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import students from "../data/students.json";
+import student from "../data/student.json";
 
 function Student() {
   return (

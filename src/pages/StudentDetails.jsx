@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import students from "../data/students.json";
+import students from "../data/student.json";
 
 function StudentDetails() {
   const { id } = useParams();
