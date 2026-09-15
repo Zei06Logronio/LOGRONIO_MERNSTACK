@@ -1,3 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
+
+
 function Home() {
   return (
     <div className="page">
