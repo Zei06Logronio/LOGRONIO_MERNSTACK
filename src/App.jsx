@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Students from "./pages/Students";
 import StudentDetails from "./pages/StudentDetails";
-import Teachers from "./pages/Teachers";
+import Teachers from "./pages/teachers";
 import AddTeacher from "./pages/AddTeacher";
 
 function App() {
