@@ -24,7 +24,7 @@ function Teachers() {
         <table>
           <thead>
             <tr>
-              <th>ID</th>
+              <th>Employee Number</th>
               <th>Name</th>
               <th>Specialization</th>
               <th>Department</th>
