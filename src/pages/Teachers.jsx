@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import teacherData from "../data/teacher.json";
 
 function Teachers() {
   const [teachers, setTeachers] = useState([]);
 
   useEffect(() => {
-    // Get teachers that were added previously
     const savedTeachers =
       JSON.parse(localStorage.getItem("teachers")) || [];
 
-    // Combine JSON data with newly added teachers
     setTeachers([
       ...teacherData,
       ...savedTeachers,

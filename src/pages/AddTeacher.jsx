@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 function AddTeacher() {
   const [teacher, setTeacher] = useState({
     id: "",
