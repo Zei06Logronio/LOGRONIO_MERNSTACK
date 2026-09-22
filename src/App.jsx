@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Students from "./pages/Students";
 import StudentDetails from "./pages/StudentDetails";
+import Teachers from "./pages/Teachers";
+import AddTeacher from "./pages/AddTeacher";
 
 function App() {
   return (
@@ -18,6 +20,15 @@ function App() {
         <Route
           path="/students/:id"
           element={<StudentDetails />}
+        />
+          <Route
+          path="/teachers"
+          element={<Teachers />}
+        />
+
+        <Route
+          path="/add-teacher"
+          element={<AddTeacher />}
         />
       </Routes>
     </BrowserRouter>
